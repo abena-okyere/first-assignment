@@ -4,66 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Generator</title>
-    <link rel = "stylesheet" type="text/css" href="des1.css">
-    <script type="text/javascrypt" src="form.js"></script>
+	<link rel = "stylesheet" type="text/css" href="des1.css">
+	<script type="text/javascrypt" src="indexform.js"></script>
+
 </head>
 <body class="diff">
     <h1 style="font-style: italic;"> Welcome!</h1> <h2 style="font-style: italic;">Put in your information</h2>
     <h1 id="app"></h1>
-<form id="addForm" class="form-box" method="post">
+	<form id="addForm" class="form-box" method="post" action="output.html">
     
     <ul>
-		<a>First Name:   </a>
+		<a>First Name:</a>
 		<input type="text" id="first" name="f_name"  placeholder="First Name" style="right: auto;">
+		<span id = "fnameError"></span>
 		<br>
 		<br>
 		<br>
-    	<a>Middle Name:  </a>
+    	<a>Middle Name:</a>
 		<input type="text" id="middle" name="mid_name"  placeholder="Middle Name" style="right: auto;">
+		<span id="mnameError"></span>
 		<br>
 		<br>
 		<br>
-		<a>Last Name:    </a>
+		<a>Last Name:</a>
 		<input type="text" id="last" name="l_name" placeholder="Last Name">
+		<span id="lnameError"></span>
 		<br>
 		<br>
 		<br>
-		<a>Email:        </a>
-		<input type="email" id="email" name="email"  placeholder="studentname@ahesi.edu.gh">
+		<a>Email:</a>
+		<input type="email" id="email" name="e_mail"  placeholder="studentname@ahesi.edu.gh">
+		<span id="mailError"></span>
 		<br>
 		<br>
 		<br>
-		<a>Phone Number: </a>
-		<input type="number" id="phone" name="phone_num"  placeholder="Phone Number">
+		<a>Phone Number:</a>
+		<input type="tel" id="phoneNum" name="phone_num"  placeholder="Phone Number">
+		<span id="numbError"></span>
 		<br>
 		<br>
 		<br>
-        <a>Address:      </a>
+        <a>Address:</a>
 		<input type="url/text" id = "addy" name="address" placeholder="Address">
+		<span id="addrsError"></span>
 		<br>
 		<br>
 		<br>
-        <a>Gender:       </a>
-        <select name="Gender" id="Gender">
+        <a>Gender:</a>
+        <select name="gender" id="Gender">
 			<option value="Male">---</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
             <option value="Other">Other</option>
 		  </select>
-		  
 		  <br>
 		  <br>
     
-    </ul>
+    </ul>        
+    <button type="submit" >Finish</button>
+	</form>
 
-	<button style="background-color:cadetblue;color:black;" id="Submit" onclick="pop()" onclick="work()" > 
-		<a href="output.html">Submit</a>
-	</button>
-        
-    
-</form>
-    
 </body>
 </html>
 
-<h1 id="app"></h1>
+
